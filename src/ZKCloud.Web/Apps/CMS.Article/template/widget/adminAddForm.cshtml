@@ -1,0 +1,73 @@
+﻿
+@model ZKCloud.Web.Apps.CMS.Article.src.ViewModels.ArticleViewModel
+@{
+    ViewData["Title"] = "添加文章";
+}
+
+<h2>@ViewData["Title"].</h2>
+<div class="row">
+    <div class="col-md-8">
+        <form asp-controller="User" asp-action="Login" method="post" class="form-horizontal" role="form">
+            <h4>添加文章</h4>
+            <input asp-for="Id" type="hidden" />
+            <input asp-for="CreateTime" type="hidden" />
+            <input asp-for="LastUpdated" type="hidden" />
+            <hr />
+            <div asp-validation-summary="ValidationSummary.All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Source" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Source" class="form-control" />
+                    <span asp-validation-for="Source" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summary" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Summary" class="form-control" />
+                    <span asp-validation-for="Summary" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intro" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <textarea asp-for="Intro" class="form-control" /></textarea>
+                    <span asp-validation-for="Intro" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayOrder" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="DisplayOrder" class="form-control" />
+                    <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Remark" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Remark" class="form-control" />
+                    <span asp-validation-for="Remark" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="State" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="State" class="form-control" />
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="btn btn-default">保 存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿
+@model ZKCloud.Web.Apps.Common.User.src.Model.LoginViewModel
+@{
+    ViewData["Title"] = "登录";
+}
+
+<h2>@ViewData["Title"].</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form asp-controller="User" asp-action="Login"  method="post" class="form-horizontal" role="form">
+                <h4>输入账号登录系统</h4>
+                <hr />
+                <div asp-validation-summary="ValidationSummary.All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Username" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Username" class="form-control" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CaptCha" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="CaptCha" class="form-control" />
+                        <span asp-validation-for="CaptCha" class="text-danger"></span>
+                        <div><label id="showCaptcha" onclick="changeCaptcha()">获取验证码</label></div>
+                    </div>
+                </div>
+                @*<div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            <input asp-for="RememberMe" />
+                            <label asp-for="RememberMe"></label>
+                        </div>
+                    </div>
+                </div>*@
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default">登 录</button>
+                    </div>
+                </div>
+                <p>
+                    <a asp-action="Reg">注册新用户</a>
+                </p>
+                @*<p>
+                    <a asp-action="ForgotPassword">忘记密码</a>
+                </p>*@
+            </form>
+        </section>
+    </div>
+   
+</div>
+<script>
+    $(document).ready(function(){
+        htmlobj=$.ajax({ url: "/getCaptcha?key=@ViewData["captchaKey"]", async: false });
+        $("#showCaptcha").html(htmlobj.responseText);
+    });
+    function changeCaptcha () {
+        htmlobj=$.ajax({ url: "/getCaptcha?key=@ViewData["captchaKey"]", async: false });
+        $("#showCaptcha").html(htmlobj.responseText);
+    }
+    
+</script>

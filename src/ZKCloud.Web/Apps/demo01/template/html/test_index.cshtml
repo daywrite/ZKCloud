@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@addTagHelper "*, ZKCloud"
+@addTagHelper "*, ZKCloud.Web"
+@using ZKCloud.Web.Mvc;
+@{
+}
+Demo01::Test::Index
+<br />
+@Model
+<br />
+<textarea Url="http://www.baidu.com" cols="80" rows="30"></textarea>
+<br />
+@Url.AppStaticContent("images/test.png")
+<br />
+@Url.Action("index", "test", new { app = "demo02" })
+<br />
+@Html.Partial("testblock");
+<br />
+@Html.Partial("~/apps/demo01/template/html/htmlblock")
+<br />
+@Html.T("aaaa")
+<br />
+<a href="http://www.baidu.com" target="_blank" title="aaaa" translate-for="title,content">aaaa</a>
+<label translate-for="content">aaaa</label>
+<span translate-for="content">aaaa</span>

@@ -1,0 +1,36 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ZKCloud Class Library",
+  "authors": [ "leven" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "frameworks": {
+    
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Runtime.Loader": "4.0.0-beta-23516",
+        "System.Threading": "4.0.11-beta-23516",
+        "System.IO.FileSystem": "4.0.1-beta-23516",
+        "System.AppContext": "4.0.1-beta-23516",
+        "System.Reflection.Emit": "4.0.1-beta-23516",
+        "System.Globalization": "4.0.11-beta-23516",
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+        "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final"
+      }
+    }
+  },
+  "dependencies": {
+    "Newtonsoft.Json": "8.0.2",
+    "DryIoc.MefAttributedModel.dll": "2.2.0",
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.Sqlite": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+    "EntityFramework7.Npgsql": "3.1.0-rc1-3"
+  }
+}

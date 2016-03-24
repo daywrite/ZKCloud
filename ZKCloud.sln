@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{79CF885E-8498-46A1-BEE5-FFDF89125C8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B21C9BEB-F263-49F1-A94E-3E1518313D12}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ZKCloud", "src\ZKCloud\ZKCloud.xproj", "{12F04A17-7B9E-4C8D-A8F1-A7E6D59E88FF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ZKCloud.Web", "src\ZKCloud.Web\ZKCloud.Web.xproj", "{EA6A0002-713B-49AD-A658-549450A50D4B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ZKCloud.Utils", "src\ZKCloud.Utils\ZKCloud.Utils.xproj", "{B8762540-043E-41A5-A3F8-7C9018FC2FDE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetWeb", "src\AspNetWeb\AspNetWeb.xproj", "{125D34CD-D053-4E9C-B287-E4DAA5942BC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F04A17-7B9E-4C8D-A8F1-A7E6D59E88FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F04A17-7B9E-4C8D-A8F1-A7E6D59E88FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F04A17-7B9E-4C8D-A8F1-A7E6D59E88FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F04A17-7B9E-4C8D-A8F1-A7E6D59E88FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6A0002-713B-49AD-A658-549450A50D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6A0002-713B-49AD-A658-549450A50D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6A0002-713B-49AD-A658-549450A50D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6A0002-713B-49AD-A658-549450A50D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8762540-043E-41A5-A3F8-7C9018FC2FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8762540-043E-41A5-A3F8-7C9018FC2FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8762540-043E-41A5-A3F8-7C9018FC2FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8762540-043E-41A5-A3F8-7C9018FC2FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125D34CD-D053-4E9C-B287-E4DAA5942BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125D34CD-D053-4E9C-B287-E4DAA5942BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125D34CD-D053-4E9C-B287-E4DAA5942BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125D34CD-D053-4E9C-B287-E4DAA5942BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12F04A17-7B9E-4C8D-A8F1-A7E6D59E88FF} = {79CF885E-8498-46A1-BEE5-FFDF89125C8A}
+		{EA6A0002-713B-49AD-A658-549450A50D4B} = {79CF885E-8498-46A1-BEE5-FFDF89125C8A}
+		{B8762540-043E-41A5-A3F8-7C9018FC2FDE} = {79CF885E-8498-46A1-BEE5-FFDF89125C8A}
+		{125D34CD-D053-4E9C-B287-E4DAA5942BC1} = {79CF885E-8498-46A1-BEE5-FFDF89125C8A}
+	EndGlobalSection
+EndGlobal

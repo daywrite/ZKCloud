@@ -1,0 +1,117 @@
+﻿.articletop {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.articletop .btn {
+    outline: none;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.articletop .btn_action {
+    background-color: #32C5D2;
+    color: white;
+}
+
+.articletop .btn_setting {
+    border: 1px solid #61AFE4;
+}
+
+.articletop .btn_setting {
+    border: 1px solid #61AFE4;
+    color: #61AFE4;
+    background-color: white;
+}
+
+.articletop .btn_tool {
+    border: 1px solid #E7505A;
+    color: #E7505A;
+    background-color: white;
+}
+
+.badge-info {
+    background-color: #36C6D3;
+}
+
+.badge-warning {
+    background-color: #F0838C;
+}
+
+.zkdrop {
+    background-color: white;
+    padding: 10px;
+}
+
+.zkdrop .row {
+    margin: 0;
+}
+
+.zkdrop .nav-tabs > li.active > a, .zkdrop .nav-tabs {
+    border: 0;
+}
+
+
+.zkdrop .nav-tabs > li a {
+    border: 0;
+    color: grey;
+    font-size: 14px;
+    height: 40px;
+}
+
+.zkdrop .nav-tabs > li:hover a, .zkdrop .nav-tabs > li.active > a:focus {
+    background-color: white;
+    border: 0;
+    border-bottom: 2px solid #36C6D3;
+}
+
+.zkdrop .nav-tabs > li.active > a {
+    border-bottom: 2px solid #36C6D3;
+}
+
+.zkdrop .tab-content {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.zkdrop .adbottom {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #eee;
+    background-color: white;
+    z-index: 10000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size:12px;
+    i {
+        margin: 0 5px;
+    }
+    input[type=text]{
+        height:15px;
+        line-height:15px;
+        width:30px;
+    }
+}
+
+.zkdrop .adbottom .boBtn {
+    border: 1px solid #ddd;
+    background-color: white;
+    margin: 5px 0;
+    height: 28px;
+    line-height: 28px;
+}
+
+.zkdrop .adbottom .boBtn {
+    border-right: 0;
+    font-size: 12px;
+}
+
+.zkdrop .adbottom .boBtn:last-child {
+    border-right: 1px solid #ddd;
+}

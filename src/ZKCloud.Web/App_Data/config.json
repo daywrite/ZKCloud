@@ -1,0 +1,29 @@
+﻿{
+  "Database": "postgresql",
+  "ConnectionString": "Server=127.0.0.1;Port=5432;Database=t1;User Id=postgres;Password=4000087510;",
+  "PluginDirectories": [ "../ZKWeb.Plugins", "../ZKShop", "../ZKCMS", "../ZKOpen" ],
+  "Plugins": [
+    "Common.Base",
+    "Common.Admin",
+    "Common.MenuPageBase",
+    "Common.AdminSettings",
+    "Common.UserPanel",
+    "Common.UserContact",
+    "Common.GenericAttached",
+    "Common.GenericClass",
+    "Common.GenericTag",
+    "Common.GenericRecord",
+    "Common.LanguageSwitcher",
+    "Common.Currency",
+    "Common.Region",
+    "Common.SerialGenerate",
+    "Finance.Payment",
+    "Finance.Payment.Alipay",
+    "Finance.Payment.Tenpay",
+    "Finance.Payment.WeChat",
+    "Common.CustomTranslate",
+    "Product",
+    "Article",
+    "DIY"
+  ]
+}
