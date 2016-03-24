@@ -11,7 +11,7 @@ namespace ZKCloud.Web.Apps.Common.Base.src.Domains {
 	[App("Common.Base")]
 	public class CommonController : BaseController {
 		// GET: /<controller>/
-		[HttpGet("index")]
+		
 		public IActionResult Index() {
 			new ZKCloud.Web.Apps.Common.Perset.src.Entity.InitRegion().InitRegionData();
 
@@ -20,7 +20,6 @@ namespace ZKCloud.Web.Apps.Common.Base.src.Domains {
 			{
 				return Redirect("/user/login");
 			}
-
 			return View();
 		}
 		/// <summary>
